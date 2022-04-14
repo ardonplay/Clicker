@@ -11,7 +11,7 @@
 		3DF97CA82808926E0024819D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF97CA72808926E0024819D /* ContentView.swift */; };
 		3DF97CAA2808926F0024819D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF97CA92808926F0024819D /* Assets.xcassets */; };
 		3DF97CAD2808926F0024819D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF97CAC2808926F0024819D /* Preview Assets.xcassets */; };
-		3DF97CB12808926F0024819D /* Clicker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3DF97CB02808926F0024819D /* Clicker WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3DF97CB12808926F0024819D /* Clicker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3DF97CB02808926F0024819D /* Clicker WatchKit App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3DF97CB6280892700024819D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF97CB5280892700024819D /* Assets.xcassets */; };
 		3DF97CBC280892700024819D /* Clicker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3DF97CBB280892700024819D /* Clicker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3DF97CC1280892700024819D /* ClickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF97CC0280892700024819D /* ClickerApp.swift */; };
@@ -83,6 +83,7 @@
 		3DF97CCD280892710024819D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DF97CCF280892710024819D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DF97CD0280892710024819D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3DF97CDE2808BCA00024819D /* Clicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clicker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +127,7 @@
 		3DF97CA42808926E0024819D /* Clicker */ = {
 			isa = PBXGroup;
 			children = (
+				3DF97CDE2808BCA00024819D /* Clicker.entitlements */,
 				3DF97CA52808926E0024819D /* ClickerApp.swift */,
 				3DF97CA72808926E0024819D /* ContentView.swift */,
 				3DF97CA92808926F0024819D /* Assets.xcassets */,
@@ -327,6 +329,7 @@
 /* Begin PBXTargetDependency section */
 		3DF97CB32808926F0024819D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 3DF97CAF2808926F0024819D /* Clicker WatchKit App */;
 			targetProxy = 3DF97CB22808926F0024819D /* PBXContainerItemProxy */;
 		};
@@ -570,6 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Clicker/Clicker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Clicker/Preview Content\"";
@@ -590,6 +594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ardonplay.Clicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -601,6 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Clicker/Clicker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Clicker/Preview Content\"";
@@ -621,6 +627,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ardonplay.Clicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
